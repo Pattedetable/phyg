@@ -13,6 +13,8 @@ Le fichier utilisé pour démarrer l'écran de bienvenue est ```phys_cegep.py```
 
 Pour les différentes dépendances de chaque sous-programme, référez-vous à leur page respective.
 
+À ce stade du développement, ces sous-programmes doivent être dans le même répertoire que l'écran de bienvenue.
+
 
 ### Utilisation
 
@@ -70,6 +72,8 @@ Welcome screen linking together various programs each illustrating a physical ph
 The file used to start the program is ```phys_cegep.py```.
 
 For the dependancies needed by each program, please refer to its page.
+
+At this point in development, those programs must be in the same directory as the welcome screen.
 
 
 ### Usage
