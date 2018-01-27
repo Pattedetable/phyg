@@ -1,0 +1,9 @@
+*.gif
+*.spec
+build/*
+__pycache__/*
+Interface/__pycache__/*
+*~
+*_old.py
+params.dat
+.ropeproject/*
