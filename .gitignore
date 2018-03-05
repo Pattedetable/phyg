@@ -2,7 +2,7 @@
 *.spec
 build/*
 __pycache__/*
-Interface/__pycache__/*
+Interface/*
 *~
 *_old.py
 params.dat
