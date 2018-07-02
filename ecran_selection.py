@@ -72,9 +72,9 @@ class Ui_MainWindow(object):
         self.retranslateUi(MainWindow)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
         self.action_propos.triggered.connect(lambda: Dialog.show())
-        self.pushButton_2.clicked.connect(lambda: Window_Onde.show())
+        self.pushButton_2.clicked.connect(lambda: self.cacherEtAfficher(MainWindow, Window_Onde))
         self.pushButton.clicked.connect(QtCore.QCoreApplication.instance().quit)
-        self.pushButton_3.clicked.connect(lambda: Window_Interference.show())
+        self.pushButton_3.clicked.connect(lambda: self.cacherEtAfficher(MainWindow, Window_Interference))
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
@@ -86,3 +86,7 @@ class Ui_MainWindow(object):
         self.action_propos.setText(_translate("MainWindow", "À propos"))
 
 # import ressources_rc
+
+    def cacherEtAfficher(self, MainWindow, window_autre):
+        window_autre.show()
+        MainWindow.hide()

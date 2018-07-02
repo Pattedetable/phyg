@@ -45,8 +45,8 @@ ui_selection = ecran_selection.Ui_MainWindow()
 ui_Dial_Bienvenue.setupUi(dialog)
 ui_Dial_Onde.setupUi(dialog_son)
 ui_Dial_Inter.setupUi(dialog_inter)
-ui_Onde_Sonore_Stat.setupUi(window_Onde, dialog_son)
-ui_Interference.setupUi(window_Interference, dialog_inter)
+ui_Onde_Sonore_Stat.setupUi(window_Onde, dialog_son, window)
+ui_Interference.setupUi(window_Interference, dialog_inter, window)
 ui_selection.setupUi(window, dialog, window_Onde, window_Interference)
 
 # Make main window appear
