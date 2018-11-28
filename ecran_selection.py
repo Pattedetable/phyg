@@ -15,22 +15,20 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 
-# -*- coding: utf-8 -*-
-
-# Form implementation generated from reading ui file '/home/pattedetable/Python/Projet/Interface/ecran_selection.ui'
-#
-# Created by: PyQt5 UI code generator 5.9
-#
-# WARNING! All changes made in this file will be lost!
-
 from PyQt5 import QtCore, QtGui, QtWidgets
+import interference_main_window
+import onde_stationnaire_main_window
+import dialog_onde
+import dialog_interference
 
 class Ui_MainWindow(object):
-    def setupUi(self, MainWindow, Dialog, Window_Onde, Window_Interference):
+    def setupUi(self, MainWindow, Dialog):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(374*2, 261*2) # (374, 261)
+        MainWindow.resize(374, 261) # (374, 261)
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
+        MainWindow.setCentralWidget(self.centralwidget)
+
         self.gridLayout = QtWidgets.QGridLayout(self.centralwidget)
         self.gridLayout.setObjectName("gridLayout")
         self.pushButton_2 = QtWidgets.QPushButton(self.centralwidget)
@@ -45,16 +43,15 @@ class Ui_MainWindow(object):
         self.label = QtWidgets.QLabel(self.centralwidget)
         self.label.setPixmap(QtGui.QPixmap("diffraction.png"))
         self.label.setScaledContents(True)
-        self.label.setMinimumSize(1, 1)
+#        self.label.setMinimumSize(1, 1)
         self.label.setObjectName("label")
         self.gridLayout.addWidget(self.label, 0, 2, 1, 1)
         self.label2 = QtWidgets.QLabel(self.centralwidget)
         self.label2.setPixmap(QtGui.QPixmap("son.png"))
         self.label2.setScaledContents(True)
-        self.label2.setMinimumSize(1, 1)
+#        self.label2.setMinimumSize(1, 1)
         self.label2.setObjectName("label2")
         self.gridLayout.addWidget(self.label2, 0, 1, 1, 1)
-        MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 374, 25))
         self.menubar.setObjectName("menubar")
@@ -72,9 +69,9 @@ class Ui_MainWindow(object):
         self.retranslateUi(MainWindow)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
         self.action_propos.triggered.connect(lambda: Dialog.show())
-        self.pushButton_2.clicked.connect(lambda: self.cacherEtAfficher(MainWindow, Window_Onde))
+        self.pushButton_2.clicked.connect(lambda: self.lancerOnde(MainWindow))
         self.pushButton.clicked.connect(QtCore.QCoreApplication.instance().quit)
-        self.pushButton_3.clicked.connect(lambda: self.cacherEtAfficher(MainWindow, Window_Interference))
+        self.pushButton_3.clicked.connect(lambda: self.lancerInterference(MainWindow))
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
@@ -87,6 +84,22 @@ class Ui_MainWindow(object):
 
 # import ressources_rc
 
-    def cacherEtAfficher(self, MainWindow, window_autre):
-        window_autre.show()
-        MainWindow.hide()
+    def lancerOnde(self, MainWindow):
+        window = QtWidgets.QMainWindow()
+        dialog = QtWidgets.QDialog()
+        ui = onde_stationnaire_main_window.Ui_MainWindow()
+        ui_Dial = dialog_onde.Ui_Dialog()
+        ui.setupUi(window, dialog, None)#, MainWindow)
+        ui_Dial.setupUi(dialog)
+        window.show()
+#        MainWindow.hide()
+
+    def lancerInterference(self, MainWindow):
+        window = QtWidgets.QMainWindow()
+        dialog = QtWidgets.QDialog()
+        ui = interference_main_window.Ui_MainWindow()
+        ui_Dial = dialog_interference.Ui_Dialog()
+        ui.setupUi(window, dialog, None)#, MainWindow)
+        ui_Dial.setupUi(dialog)
+        window.show()
+#        MainWindow.hide()
