@@ -1,4 +1,4 @@
-# Physique au Cégep
+# PhyG
 
 
 ## Français
