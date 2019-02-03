@@ -20,6 +20,7 @@ import interference_main_window
 import onde_stationnaire_main_window
 import dialog_onde
 import dialog_interference
+import subprocess
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow, Dialog):
@@ -85,23 +86,30 @@ class Ui_MainWindow(object):
 # import ressources_rc
 
     def lancerOnde(self, MainWindow):
-        window = QtWidgets.QMainWindow()
-        dialog = QtWidgets.QDialog()
-        ui = onde_stationnaire_main_window.Ui_MainWindow()
-        ui_Dial = dialog_onde.Ui_Dialog()
-        ui_Dial.setupUi(dialog)
-        ui.setupUi(window, dialog, MainWindow)
-        window.show()
-#        MainWindow.hide()
-        MainWindow.close()
+        app = QtWidgets.QApplication.instance()
+        app.closeAllWindows()
+        subprocess.run(["python3", "onde_son_stat.py"])
+    #     window = QtWidgets.QMainWindow()
+    #     dialog = QtWidgets.QDialog()
+    #     ui = onde_stationnaire_main_window.Ui_MainWindow()
+    #     ui_Dial = dialog_onde.Ui_Dialog()
+    #     ui_Dial.setupUi(dialog)
+    #     ui.setupUi(window, dialog, None)
+    # #        ui.setupUi(window, dialog, MainWindow)
+    #     window.show()
+    # #        MainWindow.hide()
+    # #       MainWindow.close()
 
     def lancerInterference(self, MainWindow):
-        window = QtWidgets.QMainWindow()
-        dialog = QtWidgets.QDialog()
-        ui = interference_main_window.Ui_MainWindow()
-        ui_Dial = dialog_interference.Ui_Dialog()
-        ui.setupUi(window, dialog, MainWindow)
-        ui_Dial.setupUi(dialog)
-        window.show()
-        MainWindow.close()
-#        MainWindow.hide()
+        app = QtWidgets.QApplication.instance()
+        app.closeAllWindows()
+        subprocess.run(["python3", "interference.py"])
+#         window = QtWidgets.QMainWindow()
+#         dialog = QtWidgets.QDialog()
+#         ui = interference_main_window.Ui_MainWindow()
+#         ui_Dial = dialog_interference.Ui_Dialog()
+#         ui.setupUi(window, dialog, MainWindow)
+#         ui_Dial.setupUi(dialog)
+#         window.show()
+#         MainWindow.close()
+# #        MainWindow.hide()
