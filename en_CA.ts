@@ -52,6 +52,22 @@
         <translation>About</translation>
     </message>
     <message>
+        <source>Enregistrer sous...</source>
+        <translation>Save as...</translation>
+    </message>
+    <message>
+        <source>Particules</source>
+        <translation>Particles</translation>
+    </message>
+    <message>
+        <source>Déplacement</source>
+        <translation>Displacement</translation>
+    </message>
+    <message>
+        <source>Pression</source>
+        <translation>Pressure</translation>
+    </message>
+    <message>
         <source>Interférence et diffraction</source>
         <translation>Interference and diffraction</translation>
     </message>
