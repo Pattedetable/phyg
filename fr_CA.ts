@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
 <TS version="2.1" language="fr" sourcelanguage="fr">
+<!-- lrelease fr_CA.ts -->
 <context>
     <name>MainWindow</name>
+    <message>
+        <source>Mouvement harmonique simple</source>
+        <translation>Mouvement harmonique simple</translation>
+    </message>
     <message>
         <source>Onde sonore stationnaire</source>
         <translation>Onde sonore stationnaire</translation>
