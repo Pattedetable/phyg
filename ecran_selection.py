@@ -18,8 +18,10 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 import interference_main_window
 import onde_stationnaire_main_window
+import harmonique_main_window
 import dialog_onde
 import dialog_interference
+import dialog_harmonique
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow, Dialog):
@@ -89,7 +91,7 @@ class Ui_MainWindow(object):
         self.pushButton_2.clicked.connect(lambda: self.lancerOnde(MainWindow))
         self.pushButton.clicked.connect(QtCore.QCoreApplication.instance().quit)
         self.pushButton_3.clicked.connect(lambda: self.lancerInterference(MainWindow))
-#        self.pushButton_4.clicked.connect(lambda: self.lancerMHS(MainWindow))
+        self.pushButton_4.clicked.connect(lambda: self.lancerMHS(MainWindow))
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate

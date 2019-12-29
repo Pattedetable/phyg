@@ -9,6 +9,8 @@
 
 * [Interférence et diffraction](https://github.com/Pattedetable/interference-diffraction)
 
+* [Mouvement harmonique](https://github.com/Pattedetable/mouvement-harmonique)
+
 Le fichier utilisé pour démarrer l'écran de bienvenue est ```PhyG.py```.
 
 Pour les différentes dépendances de chaque sous-programme, référez-vous à leur page respective.
@@ -70,6 +72,8 @@ Welcome screen linking together various programs each illustrating a physical ph
 * [Standing sound wave](https://github.com/Pattedetable/onde-sonore-stationnaire)
 
 * [Interference and diffraction](https://github.com/Pattedetable/interference-diffraction)
+
+* [Harmonic motion](https://github.com/Pattedetable/mouvement-harmonique)
 
 The file used to start the program is ```PhyG.py```.
 
