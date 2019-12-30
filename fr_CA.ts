@@ -149,6 +149,10 @@
         <translation>Amortissement</translation>
     </message>
     <message>
+        <source>sous-amorti</source>
+        <translation>sous-amorti</translation>
+    </message>
+    <message>
         <source>Position</source>
         <translation>Position</translation>
     </message>
