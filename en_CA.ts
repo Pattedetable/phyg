@@ -137,8 +137,8 @@
         <translation>Amplitude</translation>
     </message>
     <message>
-        <source>Fréquence</source>
-        <translation>Frequency</translation>
+        <source>Fréquence angulaire</source>
+        <translation>Angular frequency</translation>
     </message>
     <message>
         <source>Constante de phase</source>
