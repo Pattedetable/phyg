@@ -19,9 +19,11 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 import interference_main_window
 import onde_stationnaire_main_window
 import harmonique_main_window
+import modes_main_window
 import dialog_onde
 import dialog_interference
 import dialog_harmonique
+import dialog_modes
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow, Dialog):
@@ -40,7 +42,7 @@ class Ui_MainWindow(object):
 
         self.pushButton = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton.setObjectName("pushButton")
-        self.gridLayout.addWidget(self.pushButton, 3, 1, 1, 1)
+        self.gridLayout.addWidget(self.pushButton, 3, 3, 1, 1)
 
         self.pushButton_3 = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton_3.setObjectName("pushButton_3")
@@ -48,28 +50,39 @@ class Ui_MainWindow(object):
 
         self.pushButton_4 = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton_4.setObjectName("pushButton_4")
-        self.gridLayout.addWidget(self.pushButton_4, 1, 1, 1, 1)
+        self.gridLayout.addWidget(self.pushButton_4, 1, 0, 1, 1)
+
+        self.pushButton_5 = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton_5.setObjectName("pushButton_5")
+        self.gridLayout.addWidget(self.pushButton_5, 1, 1, 1, 1)
 
         self.label = QtWidgets.QLabel(self.centralwidget)
         self.label.setPixmap(QtGui.QPixmap("diffraction.png"))
         self.label.setScaledContents(True)
-#        self.label.setMinimumSize(1, 1)
+        self.label.setMinimumSize(200, 200)
         self.label.setObjectName("label")
         self.gridLayout.addWidget(self.label, 0, 3, 1, 1)
+
         self.label2 = QtWidgets.QLabel(self.centralwidget)
         self.label2.setPixmap(QtGui.QPixmap("son.png"))
         self.label2.setScaledContents(True)
-#        self.label2.setMinimumSize(1, 1)
+        self.label2.setMinimumSize(200, 200)
         self.label2.setObjectName("label2")
         self.gridLayout.addWidget(self.label2, 0, 2, 1, 1)
 
         self.label3 = QtWidgets.QLabel(self.centralwidget)
         self.label3.setPixmap(QtGui.QPixmap("pendule.png"))
         self.label3.setScaledContents(True)
-#        self.label3.setMinimumSize(1, 1)
-        self.label3.setObjectName("label2")
-        self.gridLayout.addWidget(self.label3, 0, 1, 1, 1)
+        self.label3.setMinimumSize(200, 200)
+        self.label3.setObjectName("label3")
+        self.gridLayout.addWidget(self.label3, 0, 0, 1, 1)
 
+        self.label4 = QtWidgets.QLabel(self.centralwidget)
+        self.label4.setPixmap(QtGui.QPixmap("corde.png"))
+        self.label4.setScaledContents(True)
+        self.label4.setMinimumSize(200, 200)
+        self.label4.setObjectName("label4")
+        self.gridLayout.addWidget(self.label4, 0, 1, 1, 1)
 
         self.menubar = QtWidgets.QMenuBar(MainWindow)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 374, 25))
@@ -92,6 +105,8 @@ class Ui_MainWindow(object):
         self.pushButton.clicked.connect(QtCore.QCoreApplication.instance().quit)
         self.pushButton_3.clicked.connect(lambda: self.lancerInterference(MainWindow))
         self.pushButton_4.clicked.connect(lambda: self.lancerMHS(MainWindow))
+        self.pushButton_5.clicked.connect(lambda: self.lancerModes(MainWindow))
+
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
@@ -100,6 +115,7 @@ class Ui_MainWindow(object):
         self.pushButton.setText(_translate("MainWindow", "Quitter"))
         self.pushButton_3.setText(_translate("MainWindow", "Interférence et diffraction"))
         self.pushButton_4.setText(_translate("MainWindow", "Mouvement harmonique simple"))
+        self.pushButton_5.setText(_translate("MainWindow", "Modes propres"))
         self.menuAide.setTitle(_translate("MainWindow", "Aide"))
         self.action_propos.setText(_translate("MainWindow", "À propos"))
 
@@ -132,6 +148,17 @@ class Ui_MainWindow(object):
         dialog = QtWidgets.QDialog()
         ui = harmonique_main_window.Ui_MainWindow()
         ui_Dial = dialog_harmonique.Ui_Dialog()
+        ui.setupUi(window, dialog, MainWindow)
+        ui_Dial.setupUi(dialog)
+        window.show()
+        MainWindow.close()
+#        MainWindow.hide()
+
+    def lancerModes(self, MainWindow):
+        window = QtWidgets.QMainWindow()
+        dialog = QtWidgets.QDialog()
+        ui = modes_main_window.Ui_MainWindow()
+        ui_Dial = dialog_modes.Ui_Dialog()
         ui.setupUi(window, dialog, MainWindow)
         ui_Dial.setupUi(dialog)
         window.show()

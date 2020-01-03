@@ -180,6 +180,34 @@
         <source>Redémarrer</source>
         <translation>Redémarrer</translation>
     </message>
+    <message>
+        <source>Modes propres</source>
+        <translation>Modes propres</translation>
+    </message>
+    <message>
+        <source>Fondamental</source>
+        <translation>Fondamental</translation>
+    </message>
+    <message>
+        <source>2e harmonique</source>
+        <translation>2e harmonique</translation>
+    </message>
+    <message>
+        <source>3e harmonique</source>
+        <translation>3e harmonique</translation>
+    </message>
+    <message>
+        <source>4e harmonique</source>
+        <translation>4e harmonique</translation>
+    </message>
+    <message>
+        <source>5e harmonique</source>
+        <translation>5e harmonique</translation>
+    </message>
+    <message>
+        <source>Amplitude</source>
+        <translation>Amplitude</translation>
+    </message>
 </context>
 <context>
     <name>Dialog</name>

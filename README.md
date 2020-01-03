@@ -11,6 +11,8 @@
 
 * [Mouvement harmonique](https://github.com/Pattedetable/mouvement-harmonique)
 
+* [Modes propres sur une corde](https://github.com/Pattedetable/modes-propres)
+
 Le fichier utilisé pour démarrer l'écran de bienvenue est ```PhyG.py```.
 
 Pour les différentes dépendances de chaque sous-programme, référez-vous à leur page respective.
