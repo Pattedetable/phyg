@@ -1,17 +1,18 @@
 # PhyG
 
+_The English version follows_
 
 ## Français
 
 Écran de bienvenue qui lie différents sous programmes servant à visualiser des phénomènes physiques vus dans des cours de niveau Cégep (système d'éducation québécois).  Les différents phénomènes sont :
 
-* [Onde sonore stationnaire](https://github.com/Pattedetable/onde-sonore-stationnaire)
+* [Onde sonore stationnaire](https://github.com/Pattedetable/phyg-standing-sound-waves)
 
-* [Interférence et diffraction](https://github.com/Pattedetable/interference-diffraction)
+* [Interférence et diffraction](https://github.com/Pattedetable/phyg-interference-diffraction)
 
-* [Mouvement harmonique](https://github.com/Pattedetable/mouvement-harmonique)
+* [Mouvement harmonique](https://github.com/Pattedetable/phyg-harmonic-motion)
 
-* [Modes propres sur une corde](https://github.com/Pattedetable/modes-propres)
+* [Modes propres sur une corde](https://github.com/Pattedetable/phyg-normal-modes)
 
 Le fichier utilisé pour démarrer l'écran de bienvenue est ```PhyG.py```.
 
@@ -62,7 +63,7 @@ Sous Windows, vous pouvez aussi double-cliquer sur le fichier ```PhyG.py```.
 Le programme est distribué sous la licence GNU GPLv3.  Pour le texte complet, référez-vous au fichier `LICENSE`.
 La version courte de cette licence est que vous êtes libre d'utiliser ce logiciel, d'en modifier le code source, ainsi que de le redistribuer, que ce soit sous sa version originale ou modifiée.  Cependant, vous devez donner ces mêmes droits aux personnes qui utiliseront votre logiciel redistribué.
 
-Le code source est disponible sur [GitHub](https://github.com/Pattedetable/ecran-bienvenue-physique).
+Le code source est disponible sur [GitHub](https://github.com/Pattedetable/phyg).
 
 Ce logiciel utilise des bibliothèques du projet FFmpeg sous la licence LGPLv2.1, de Qt sous la licence LGPLv3, ainsi que de Python, Numpy et Matplotlib.
 
@@ -71,11 +72,13 @@ Ce logiciel utilise des bibliothèques du projet FFmpeg sous la licence LGPLv2.1
 
 Welcome screen linking together various programs each illustrating a physical phenomenon covered at the Cégep level in Québec's education system.  The different phenomena are:
 
-* [Standing sound wave](https://github.com/Pattedetable/onde-sonore-stationnaire)
+* [Standing sound wave](https://github.com/Pattedetable/phyg-standing-sound-waves)
 
-* [Interference and diffraction](https://github.com/Pattedetable/interference-diffraction)
+* [Interference and diffraction](https://github.com/Pattedetable/phyg-interference-diffraction)
 
-* [Harmonic motion](https://github.com/Pattedetable/mouvement-harmonique)
+* [Harmonic motion](https://github.com/Pattedetable/phyg-harmonic-motion)
+
+* [Normal modes on a string](https://github.com/Pattedetable/phyg-normal-modes)
 
 The file used to start the program is ```PhyG.py```.
 
@@ -126,6 +129,6 @@ Moreover, on Windows, you can simply double-click on the ```PhyG.py``` file.
 This program is distributed under the GNU GPLv3 licence.  The details of this license can be found in the `LICENSE` file.
 The short version is that you are free to use this software, to modify its source code, and to redistribute it in either its original or modified form.  However, you have to give those same rights to the users of the redistributed software.
 
-The source code is available on [GitHub](https://github.com/Pattedetable/ecran-bienvenue-physique).
+The source code is available on [GitHub](https://github.com/Pattedetable/phyg).
 
 This software uses libraries from the FFmpeg project under the LGPLv2.1, Qt under the LGPLv3, Python, Numpy and Matplotlib.
