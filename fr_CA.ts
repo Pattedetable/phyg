@@ -5,10 +5,6 @@
 <context>
     <name>MainWindow</name>
     <message>
-        <source>Mouvement harmonique simple</source>
-        <translation>Mouvement harmonique simple</translation>
-    </message>
-    <message>
         <source>Onde sonore stationnaire</source>
         <translation>Onde sonore stationnaire</translation>
     </message>

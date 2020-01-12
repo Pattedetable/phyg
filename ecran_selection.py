@@ -114,7 +114,7 @@ class Ui_MainWindow(object):
         self.pushButton_2.setText(_translate("MainWindow", "Onde sonore stationnaire"))
         self.pushButton.setText(_translate("MainWindow", "Quitter"))
         self.pushButton_3.setText(_translate("MainWindow", "Interférence et diffraction"))
-        self.pushButton_4.setText(_translate("MainWindow", "Mouvement harmonique simple"))
+        self.pushButton_4.setText(_translate("MainWindow", "Mouvement harmonique"))
         self.pushButton_5.setText(_translate("MainWindow", "Modes propres"))
         self.menuAide.setTitle(_translate("MainWindow", "Aide"))
         self.action_propos.setText(_translate("MainWindow", "À propos"))
