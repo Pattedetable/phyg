@@ -117,6 +117,10 @@
         <translation>Intensity</translation>
     </message>
     <message>
+        <source>Négliger la diffraction</source>
+        <translation>Neglect diffraction</translation>
+    </message>
+    <message>
         <source>Mouvement harmonique</source>
         <translation>Harmonic motion</translation>
     </message>

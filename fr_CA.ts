@@ -117,6 +117,10 @@
         <translation>Intensité</translation>
     </message>
     <message>
+        <source>Négliger la diffraction</source>
+        <translation>Négliger la diffraction</translation>
+    </message>
+    <message>
         <source>Mouvement harmonique</source>
         <translation>Mouvement harmonique</translation>
     </message>
