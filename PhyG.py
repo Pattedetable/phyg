@@ -17,8 +17,8 @@
 
 """ Make the main window appear """
 import sys
-from PyQt5 import QtCore
-from PyQt5.QtWidgets import QApplication, QMainWindow, QDialog
+from PyQt6 import QtCore
+from PyQt6.QtWidgets import QApplication, QMainWindow, QDialog
 import dialog_bienvenue
 import ecran_selection
 import platform
@@ -53,4 +53,4 @@ ui_selection.setupUi(window, dialog)
 
 # Make main window appear
 window.show()
-sys.exit(app.exec_())
+sys.exit(app.exec())

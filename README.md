@@ -33,7 +33,7 @@ Que vous utilisiez Linux, MacOS ou Windows, vous pouvez aussi installer Python �
 
 Vous aurez aussi besoin des modules Python suivants :
 
-  * PyQt5
+  * PyQt6
 
 Si vous utilisez Linux, il est fort probable qu'ils se trouvent dans les dépôts logiciels de votre distribution.
 
@@ -43,13 +43,13 @@ Pour tous les systèmes d'exploitation supportés, à partir de la version 3.4, 
 
 Si le numéro de version affiché à l'écran commence par 2, dans tout ce qui suit, utilisez `python3` au lieu de `python`, et `pip3` au lieu de `pip`.
 
-Vous pouvez vous servir de `pip` pour installer les divers modules nécessaires.  Par exemple, pour installer PyQt5 sur Linux, une fois les droits administrateurs obtenus, entrez dans un terminal :
+Vous pouvez vous servir de `pip` pour installer les divers modules nécessaires.  Par exemple, pour installer PyQt6 sur Linux, une fois les droits administrateurs obtenus, entrez dans un terminal :
 
-```python pip install PyQt5```
+```python pip install PyQt6```
 
 Sur Windows, vous n'avez pas besoin des droits administrateurs, et la commande est plutôt :
 
-```pip install PyQt5```
+```pip install PyQt6```
 
 Une fois ces modules installés, dans le terminal sous Linux et MacOS ou l'invite de commande sous Windows, entrez :
 
@@ -99,7 +99,7 @@ You can also install Python from the [official website](https://www.python.org/)
 
 You will also need the following Python modules:
 
-  * PyQt5
+  * PyQt6
 
 On Linux, you will most likely find these modules in your distribution's repositories.
 
@@ -109,13 +109,13 @@ On all supported operating systems, starting with version 3.4, Python includes `
 
 If the version number displayed on screen begins with 2, replace `python` with `python3` and `pip` with `pip3` in every command that follows.
 
-You can then use `pip` to install the necessary modules.  For instance, to install PyQt5 on Linux, acquire administrator rights and then type in a terminal:
+You can then use `pip` to install the necessary modules.  For instance, to install PyQt6 on Linux, acquire administrator rights and then type in a terminal:
 
-```python pip install PyQt5```
+```python pip install PyQt6```
 
 On Windows, administrator rights are not required, and the command is instead:
 
-```pip install PyQt5```
+```pip install PyQt6```
 
 Once these are installed, open a terminal on Linux or MacOS (or command prompt on Windows) and enter:
 

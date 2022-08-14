@@ -15,7 +15,7 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 
-from PyQt5 import QtCore, QtGui, QtWidgets
+from PyQt6 import QtCore, QtGui, QtWidgets
 import interference_main_window
 import onde_stationnaire_main_window
 import harmonique_main_window
@@ -93,7 +93,7 @@ class Ui_MainWindow(object):
         self.statusbar = QtWidgets.QStatusBar(MainWindow)
         self.statusbar.setObjectName("statusbar")
         MainWindow.setStatusBar(self.statusbar)
-        self.action_propos = QtWidgets.QAction(MainWindow)
+        self.action_propos = QtGui.QAction(MainWindow)
         self.action_propos.setObjectName("action_propos")
         self.menuAide.addAction(self.action_propos)
         self.menubar.addAction(self.menuAide.menuAction())
