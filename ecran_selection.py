@@ -24,6 +24,7 @@ import dialog_onde
 import dialog_interference
 import dialog_harmonique
 import dialog_modes
+import os
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow, Dialog):
@@ -56,29 +57,35 @@ class Ui_MainWindow(object):
         self.pushButton_5.setObjectName("pushButton_5")
         self.gridLayout.addWidget(self.pushButton_5, 1, 1, 1, 1)
 
+        directory = "images"
+
         self.label = QtWidgets.QLabel(self.centralwidget)
-        self.label.setPixmap(QtGui.QPixmap("diffraction.png"))
+        image = os.path.join(directory, "diffraction.png")
+        self.label.setPixmap(QtGui.QPixmap(image))
         self.label.setScaledContents(True)
         self.label.setMinimumSize(200, 200)
         self.label.setObjectName("label")
         self.gridLayout.addWidget(self.label, 0, 3, 1, 1)
 
         self.label2 = QtWidgets.QLabel(self.centralwidget)
-        self.label2.setPixmap(QtGui.QPixmap("son.png"))
+        image = os.path.join(directory, "son.png")
+        self.label2.setPixmap(QtGui.QPixmap(image))
         self.label2.setScaledContents(True)
         self.label2.setMinimumSize(200, 200)
         self.label2.setObjectName("label2")
         self.gridLayout.addWidget(self.label2, 0, 2, 1, 1)
 
         self.label3 = QtWidgets.QLabel(self.centralwidget)
-        self.label3.setPixmap(QtGui.QPixmap("pendule.png"))
+        image = os.path.join(directory, "pendule.png")
+        self.label3.setPixmap(QtGui.QPixmap(image))
         self.label3.setScaledContents(True)
         self.label3.setMinimumSize(200, 200)
         self.label3.setObjectName("label3")
         self.gridLayout.addWidget(self.label3, 0, 0, 1, 1)
 
         self.label4 = QtWidgets.QLabel(self.centralwidget)
-        self.label4.setPixmap(QtGui.QPixmap("corde.png"))
+        image = os.path.join(directory, "corde.png")
+        self.label4.setPixmap(QtGui.QPixmap(image))
         self.label4.setScaledContents(True)
         self.label4.setMinimumSize(200, 200)
         self.label4.setObjectName("label4")

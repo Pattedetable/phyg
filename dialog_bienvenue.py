@@ -24,6 +24,7 @@
 # WARNING! All changes made in this file will be lost!
 
 from PyQt6 import QtCore, QtGui, QtWidgets
+import os
 
 class Ui_Dialog(object):
     def setupUi(self, Dialog):
@@ -37,6 +38,14 @@ class Ui_Dialog(object):
         Dialog.setSizePolicy(sizePolicy)
         self.verticalLayout = QtWidgets.QVBoxLayout(Dialog)
         self.verticalLayout.setObjectName("verticalLayout")
+        self.label_image = QtWidgets.QLabel(Dialog)
+        self.label_image.setObjectName("label_image")
+        self.verticalLayout.addWidget(self.label_image)
+        self.label_image.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
+        directory = "images"
+        url_image = os.path.join(directory, "logo.png")
+        image = QtGui.QPixmap(url_image)
+        self.label_image.setPixmap(image)
         self.label = QtWidgets.QLabel(Dialog)
         self.label.setOpenExternalLinks(True)
         self.label.setTextInteractionFlags(QtCore.Qt.TextInteractionFlag.LinksAccessibleByMouse)
@@ -53,7 +62,9 @@ class Ui_Dialog(object):
     def retranslateUi(self, Dialog):
         _translate = QtCore.QCoreApplication.translate
         Dialog.setWindowTitle(_translate("Dialog", "À propos"))
-        self.label.setText(_translate("Dialog", "<html><head/><body><p align=\"center\"><img src=\"logo.png\"/></p><p align=\"center\"><span style=\" font-size:16pt; font-weight:600;\">PhyG</span></p><p align=\"center\"><span style=\" font-size:12pt;\">Copyright 2017-2022 Manuel Barrette</p><p align=\"center\"><span style=\" font-size:12pt;\">License <a href=\"https://www.gnu.org/licenses/gpl-3.0.en.html\"><span style=\" text-decoration: underline; color:#0000ff;\">GNU GPLv3</span></a><\span><\span></p><p align=\"center\"><span style=\" font-size:12pt;\">Source code available on <a href=\"https://github.com/Pattedetable/ecran-bienvenue-physique\"><span style=\" text-decoration: underline; color:#0000ff;\">GitHub</span></a><\span></p><p align=\"center\"><span style=\" font-size:10pt;\">This software uses libraries from the <a href=\"https://ffmpeg.org\"><span style=\" text-decoration: underline; color:#0000ff;\">FFmpeg</span></a> project under the LGPLv2.1,</span></p><p align=\"center\"><span style=\" font-size:10pt;\"><a href=\"https://www.qt.io/\"><span style=\" text-decoration: underline; color:#0000ff;\">Qt</span></a> under the LGPLv3, <a href=\"https://www.python.org/\"><span style=\" text-decoration: underline; color:#0000ff;\">Python</span></a>, <a href=\"http://www.numpy.org/\"><span style=\" text-decoration: underline; color:#0000ff;\">Numpy</span></a> and <a href=\"https://matplotlib.org/\"><span style=\" text-decoration: underline; color:#0000ff;\">Matplotlib</span></a>.<\span></p></body></html>"))
+        self.label.setText(_translate("Dialog", "<html><head/><body><p align=\"center\"><span style=\" font-size:16pt; font-weight:600;\">PhyG</span></p><p align=\"center\"><span style=\" font-size:12pt;\">Copyright 2017-2022 Manuel Barrette</p><p align=\"center\"><span style=\" font-size:12pt;\">License <a href=\"https://www.gnu.org/licenses/gpl-3.0.en.html\"><span style=\" text-decoration: underline; color:#0000ff;\">GNU GPLv3</span></a><\span><\span></p><p align=\"center\"><span style=\" font-size:12pt;\">Source code available on <a href=\"https://github.com/Pattedetable/ecran-bienvenue-physique\"><span style=\" text-decoration: underline; color:#0000ff;\">GitHub</span></a><\span></p><p align=\"center\"><span style=\" font-size:10pt;\">This software uses libraries from the <a href=\"https://ffmpeg.org\"><span style=\" text-decoration: underline; color:#0000ff;\">FFmpeg</span></a> project under the LGPLv2.1,</span></p><p align=\"center\"><span style=\" font-size:10pt;\"><a href=\"https://www.qt.io/\"><span style=\" text-decoration: underline; color:#0000ff;\">Qt</span></a> under the LGPLv3, <a href=\"https://www.python.org/\"><span style=\" text-decoration: underline; color:#0000ff;\">Python</span></a>, <a href=\"http://www.numpy.org/\"><span style=\" text-decoration: underline; color:#0000ff;\">Numpy</span></a> and <a href=\"https://matplotlib.org/\"><span style=\" text-decoration: underline; color:#0000ff;\">Matplotlib</span></a>.<\span></p></body></html>"))
+
+#        self.label.setText(_translate("Dialog", "<html><head/><body><p align=\"center\"><img src=\"logo.png\"/></p><p align=\"center\"><span style=\" font-size:16pt; font-weight:600;\">PhyG</span></p><p align=\"center\"><span style=\" font-size:12pt;\">Copyright 2017-2022 Manuel Barrette</p><p align=\"center\"><span style=\" font-size:12pt;\">License <a href=\"https://www.gnu.org/licenses/gpl-3.0.en.html\"><span style=\" text-decoration: underline; color:#0000ff;\">GNU GPLv3</span></a><\span><\span></p><p align=\"center\"><span style=\" font-size:12pt;\">Source code available on <a href=\"https://github.com/Pattedetable/ecran-bienvenue-physique\"><span style=\" text-decoration: underline; color:#0000ff;\">GitHub</span></a><\span></p><p align=\"center\"><span style=\" font-size:10pt;\">This software uses libraries from the <a href=\"https://ffmpeg.org\"><span style=\" text-decoration: underline; color:#0000ff;\">FFmpeg</span></a> project under the LGPLv2.1,</span></p><p align=\"center\"><span style=\" font-size:10pt;\"><a href=\"https://www.qt.io/\"><span style=\" text-decoration: underline; color:#0000ff;\">Qt</span></a> under the LGPLv3, <a href=\"https://www.python.org/\"><span style=\" text-decoration: underline; color:#0000ff;\">Python</span></a>, <a href=\"http://www.numpy.org/\"><span style=\" text-decoration: underline; color:#0000ff;\">Numpy</span></a> and <a href=\"https://matplotlib.org/\"><span style=\" text-decoration: underline; color:#0000ff;\">Matplotlib</span></a>.<\span></p></body></html>"))
         self.pushButton.setText(_translate("Dialog", "Fermer"))
 
 #import images_rc
