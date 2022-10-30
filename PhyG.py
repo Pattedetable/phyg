@@ -38,11 +38,12 @@ elif systeme_exploitation == 'Darwin' or 'Linux':
     langue_sys = locale.getdefaultlocale()[0]
 langue_sys = langue_sys[0:2]
 translator = QtCore.QTranslator()
+directory = "locales"
 if langue_sys == "fr":
     langue = "fr_CA"
 else:
     langue = "en_CA"
-translator.load(langue)
+translator.load(langue, directory)
 app.installTranslator(translator)
 
 ui_Dial_Bienvenue = dialog_bienvenue.Ui_Dialog()
