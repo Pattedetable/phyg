@@ -17,12 +17,20 @@
 
 """ Make the main window appear """
 import sys
-from PyQt6 import QtCore
-from PyQt6.QtWidgets import QApplication, QMainWindow, QDialog
-import dialog_bienvenue
-import ecran_selection
 import platform
 import locale, ctypes
+import glob, os
+from PyQt6 import QtCore
+from PyQt6.QtWidgets import QApplication, QMainWindow, QDialog
+
+results = glob.glob(os.getcwd() + "/**/", recursive=True)
+for result in results:
+    if result[-2] != "_":
+        sys.path.insert(1, result)
+
+
+import dialog_bienvenue
+import ecran_selection
 
 
 # Initialize windows
@@ -39,7 +47,7 @@ elif systeme_exploitation == 'Darwin' or 'Linux':
 langue_sys = langue_sys[0:2]
 translator = QtCore.QTranslator()
 directory = "locales"
-if langue_sys == "fr":
+if langue_sys == "en":
     langue = "fr_CA"
 else:
     langue = "en_CA"
