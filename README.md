@@ -1,4 +1,4 @@
-# PhyG
+# Phyg
 
 _The English version follows_
 
@@ -14,7 +14,7 @@ _The English version follows_
 
 * [Modes propres sur une corde](https://github.com/Pattedetable/phyg-normal-modes)
 
-Le fichier utilisé pour démarrer l'écran de bienvenue est ```PhyG.py```.
+Le fichier utilisé pour démarrer l'écran de bienvenue est ```Phyg.py```.
 
 Pour les différentes dépendances de chaque sous-programme, référez-vous à leur page respective.
 
@@ -53,9 +53,9 @@ Sur Windows, vous n'avez pas besoin des droits administrateurs, et la commande e
 
 Une fois ces modules installés, dans le terminal sous Linux et MacOS ou l'invite de commande sous Windows, entrez :
 
-```python PhyG.py```
+```python Phyg.py```
 
-Sous Windows, vous pouvez aussi double-cliquer sur le fichier ```PhyG.py```.
+Sous Windows, vous pouvez aussi double-cliquer sur le fichier ```Phyg.py```.
 
 
 ### License
@@ -80,7 +80,7 @@ Welcome screen linking together various programs each illustrating a physical ph
 
 * [Normal modes on a string](https://github.com/Pattedetable/phyg-normal-modes)
 
-The file used to start the program is ```PhyG.py```.
+The file used to start the program is ```Phyg.py```.
 
 For the dependancies needed by each program, please refer to its page.
 
@@ -119,9 +119,9 @@ On Windows, administrator rights are not required, and the command is instead:
 
 Once these are installed, open a terminal on Linux or MacOS (or command prompt on Windows) and enter:
 
-```python PhyG.py```
+```python Phyg.py```
 
-Moreover, on Windows, you can simply double-click on the ```PhyG.py``` file.
+Moreover, on Windows, you can simply double-click on the ```Phyg.py``` file.
 
 
 ### License
