@@ -117,7 +117,7 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "PhyG"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "Phyg"))
         self.pushButton_2.setText(_translate("MainWindow", "Onde sonore stationnaire"))
         self.pushButton.setText(_translate("MainWindow", "Quitter"))
         self.pushButton_3.setText(_translate("MainWindow", "Interférence et diffraction"))
