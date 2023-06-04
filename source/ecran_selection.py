@@ -27,7 +27,7 @@ import dialog_modes
 import os
 
 class Ui_MainWindow(object):
-    def setupUi(self, MainWindow, Dialog):
+    def setupUi(self, MainWindow, Dialog, ui_Dialog):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(374, 261) # (374, 261)
         self.centralwidget = QtWidgets.QWidget(MainWindow)
@@ -101,6 +101,18 @@ class Ui_MainWindow(object):
         self.statusbar.setObjectName("statusbar")
         MainWindow.setStatusBar(self.statusbar)
         self.action_propos = QtGui.QAction(MainWindow)
+
+        self.action_translate = QtWidgets.QMenu(MainWindow)
+        self.action_translate.setObjectName("action_translate")
+        self.menuAide.addMenu(self.action_translate)
+
+        self.action_fr = QtGui.QAction(MainWindow)
+        self.action_fr.setObjectName("action_fr")
+        self.action_translate.addAction(self.action_fr)
+        self.action_en = QtGui.QAction(MainWindow)
+        self.action_en.setObjectName("action_en")
+        self.action_translate.addAction(self.action_en)
+
         self.action_propos.setObjectName("action_propos")
         self.menuAide.addAction(self.action_propos)
         self.menubar.addAction(self.menuAide.menuAction())
@@ -108,6 +120,8 @@ class Ui_MainWindow(object):
         self.retranslateUi(MainWindow)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
         self.action_propos.triggered.connect(lambda: Dialog.show())
+        self.action_fr.triggered.connect(lambda: self.traduire(MainWindow, Dialog, ui_Dialog, "fr_CA"))
+        self.action_en.triggered.connect(lambda: self.traduire(MainWindow, Dialog, ui_Dialog, "en_CA"))
         self.pushButton_2.clicked.connect(lambda: self.lancerOnde(MainWindow))
         self.pushButton.clicked.connect(QtCore.QCoreApplication.instance().quit)
         self.pushButton_3.clicked.connect(lambda: self.lancerInterference(MainWindow))
@@ -123,8 +137,19 @@ class Ui_MainWindow(object):
         self.pushButton_3.setText(_translate("MainWindow", "Interférence et diffraction"))
         self.pushButton_4.setText(_translate("MainWindow", "Mouvement harmonique"))
         self.pushButton_5.setText(_translate("MainWindow", "Modes propres"))
-        self.menuAide.setTitle(_translate("MainWindow", "Aide"))
+        self.menuAide.setTitle(_translate("MainWindow", "Options"))
+        self.action_translate.setTitle(_translate("MainWindow", "Langue"))
+        self.action_fr.setText(_translate("MainWindow", "Français"))
+        self.action_en.setText(_translate("MainWindow", "English"))
         self.action_propos.setText(_translate("MainWindow", "À propos"))
+
+    def traduire(self, MainWindow, Dialog, ui_Dialog, langue):
+        directory = "locales"
+        self.translator = QtCore.QTranslator()
+        self.translator.load(langue, directory)
+        QtCore.QCoreApplication.installTranslator(self.translator)
+        self.retranslateUi(MainWindow)
+        ui_Dialog.retranslateUi(Dialog)
 
 # import ressources_rc
 

@@ -49,6 +49,14 @@
         <translation>Aide</translation>
     </message>
     <message>
+        <source>Options</source>
+        <translation>Options</translation>
+    </message>
+    <message>
+        <source>Langue</source>
+        <translation>Langue</translation>
+    </message>
+    <message>
         <source>À propos</source>
         <translation>À propos</translation>
     </message>

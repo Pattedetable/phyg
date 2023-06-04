@@ -58,7 +58,7 @@ ui_Dial_Bienvenue = dialog_bienvenue.Ui_Dialog()
 ui_selection = ecran_selection.Ui_MainWindow()
 
 ui_Dial_Bienvenue.setupUi(dialog)
-ui_selection.setupUi(window, dialog)
+ui_selection.setupUi(window, dialog, ui_Dial_Bienvenue)
 
 # Make main window appear
 window.show()
